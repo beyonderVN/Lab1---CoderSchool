@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+
+    <EditText
+                android:hint="Email"
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:textSize="@dimen/text_size"/>
+
+    <EditText
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:textSize="@dimen/text_size"/>
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"/>
+
+    <TextView
+        android:id="@+id/tvForGotPassword"
+        android:textColor="#FFFFFF"
+        android:text="Forgot password?"
+        android:layout_below="@id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:textColor="#FFFFFF"
+        android:text="Sign Up For Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

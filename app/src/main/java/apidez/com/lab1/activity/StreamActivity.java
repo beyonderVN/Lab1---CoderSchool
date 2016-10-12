@@ -21,6 +21,6 @@ public class StreamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stream);
         lvPost = (ListView) findViewById(R.id.lvPost);
-        lvPost.setAdapter(new PostAdapter(this, Data.posts()));
+//        lvPost.setAdapter(new PostAdapter(this, Data.posts()));
     }
 }
